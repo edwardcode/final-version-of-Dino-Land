@@ -1,0 +1,50 @@
+<head>
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" rel="stylesheet">
+        <!-- font -->
+        <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
+            <!-- jQuery library -->
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+            </script>
+            <!-- Popper JS -->
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js">
+            </script>
+            <!-- Latest compiled JavaScript -->
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js">
+            </script>
+            <!--Stylesheets -->
+            <link href="/styles/playerJoin.css" rel="stylesheet" type="text/css"/>
+            <meta content="width=device-width, initial-scale=1.0" name="viewport">
+            </meta>
+        </link>
+    </link>
+</head>
+<body>
+    <!-- <img script src="/images/BG.png"></script> -->
+    <section class="welcomePlayer">
+        <h1 class="game-title">
+            Dino Land
+        </h1>
+        <p>
+            <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-primary" data-target="#collapseExample" data-toggle="collapse" id="joinButton" type="button">
+                Join
+            </button>
+        </p>
+        <form action="/register" id="playerRegister" method="POST">
+            <div class="collapse" id="collapseExample">
+                <div class="playerForm">
+                    <span class="nameField">
+                        name
+                    </span>
+                </div>
+            </div>
+        </form>
+    </section>
+</body>
+<input class="inputarea" name="playerName" type="text"/>
+<span class="nameNotice">
+    p.s.   Name no longer than 6 characters.
+</span>
+<button class="btn btn-primary pink-background" id="playButton" type="submit">
+    PLAY
+</button>
